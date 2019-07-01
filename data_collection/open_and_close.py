@@ -18,7 +18,3 @@ end = datetime(2012, 1, 1)
 
 # access the data and return pandas dataframe
 ibm = pdr.get_data_yahoo(symbols=symbol, start=start, end=end)
-
-# write collected data to csv file
-ibm.csvwrt
-
