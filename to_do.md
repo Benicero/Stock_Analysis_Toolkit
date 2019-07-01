@@ -17,3 +17,4 @@ Alrighty
 
 ## other:
 * i am thinking it would be good to have basically a "control group" thing that would basically pick random stocks each day, and see how well it does, to get a baseline
+* make a list of site that we want to scrape as well as any free APIs.
