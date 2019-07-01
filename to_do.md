@@ -1,4 +1,4 @@
-alrighty
+Alrighty
 ========
 
 ## basic structure as im thinking so far:
