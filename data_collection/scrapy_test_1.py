@@ -3,6 +3,8 @@
 run this file using:
     scrapy runspider scrapy_test_1.py -o <output filename>.json
 
+This program will get the current price of every stock on the nasdaq
+Not historical price, but i think this scrapy tool will be very helpful
 
 """
 

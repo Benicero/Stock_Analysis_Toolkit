@@ -1,5 +1,8 @@
 Alrighty
 ========
+589188152968-8o2d7b3ftpmicmcj21825ld1jp1evfku.apps.googleusercontent.com
+
+Gv_VB5oW3Y21dVSM5UdWxaXT
 
 ## basic structure as im thinking so far:
 1. scripts to scrape sites
