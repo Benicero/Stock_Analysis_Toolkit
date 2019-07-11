@@ -34,7 +34,6 @@ def main():
         with open('token.pickle', 'wb') as token:
             pickle.dump(creds, token)
 
-    API_KEY = 'AIzaSyAdeByYn3E7SXBmx0_LWEMU7HOsZnGZC6w'
     drive_service = build('drive', 'v3', credentials=creds, developerKey=API_KEY)
 
 
