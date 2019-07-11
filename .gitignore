@@ -1,3 +1,9 @@
+## random stuff
 .DS_Store
 __pycache__/
 .vscode/
+
+## secrets
+drive_interface/key.py
+drive_interface/credentials.json
+drive_interface/token.pickle

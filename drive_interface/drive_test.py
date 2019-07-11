@@ -1,4 +1,3 @@
-from __future__ import print_function
 import pickle
 import os.path
 from googleapiclient.discovery import build
@@ -6,7 +5,7 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 import io
 from apiclient.http import MediaIoBaseDownload
-
+from key import get_api_key
 
 # If modifying these scopes, delete the file token.pickle.
 SCOPES = ['https://www.googleapis.com/auth/drive']
@@ -34,17 +33,18 @@ def main():
         with open('token.pickle', 'wb') as token:
             pickle.dump(creds, token)
 
-    API_KEY = 'AIzaSyAdeByYn3E7SXBmx0_LWEMU7HOsZnGZC6w'
+    API_KEY = get_api_key()
     drive_service = build('drive', 'v3', credentials=creds, developerKey=API_KEY)
 
 
     # Call the Drive v3 API
 
     folder_id = '1qeA0ZsA2f5QlJ0rHLBYyx9P_3sWZ1_ea'
-    
+
     file_id = '1WBb8ithO17zJK1U4NMdkzZKJR9QzcVeF'
 
-    output_filename = 'test_out.csv'
+    current_directory = os.path.dirname(os.path.realpath(__file__))
+    output_filename = current_directory + '/test_out.csv'
 
     request = drive_service.files().get_media(fileId=file_id)
     fh = io.FileIO(output_filename, 'wb')
