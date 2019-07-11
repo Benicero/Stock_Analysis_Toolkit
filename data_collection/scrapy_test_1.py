@@ -1,4 +1,5 @@
 """
+see if u get notified
 
 run this file using:
     scrapy runspider scrapy_test_1.py -o <output filename>.json
